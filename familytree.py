@@ -1,13 +1,10 @@
 """
-Author: Ishaan Gupta (29735491)
+Author: Ishaan Gupta
 
 In this assignment we create a Python module to implement some
 basic family tree software, where users can look up various relationships
 that exist in the database, as well as merging two family tree databases
 that may contain overlapping information.
-
-Functions 1-5 are due in Part 1 of the assignment. Functions
-for 6 and 7 are due in Part 2.
 
 We represent each entry in a family tree database as a list of three
 strings [name, father, mother], where name is a person's name, father
@@ -23,13 +20,7 @@ For example:
 ...           ['Dewey Duck', None, 'Della Duck'],
 ...           ['Louie Duck', None, 'Della Duck']]
 
-For more information see the function documentation below and the
-assignment sheet.
-
 """
-
-# Part 1 (due Week 6) #
-
 def person_index(person, family):
     """ Returns the index of a person from a family tree database.
 
@@ -277,9 +268,6 @@ def grandparents(person, family):
             g_parents.append(father(mum, family))
             g_parents.append(mother(mum, family))
     return g_parents
-
-
-# Part 2: (due Week 11) #
 
 def siblings(person, family):
     """ Returns the siblings of a person from a family tree database.
